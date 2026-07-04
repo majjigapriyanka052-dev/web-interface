@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduGenie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form action="/ask" method="POST">
+            <input type="text" name="question" placeholder="Enter your question or text" required>
+    <h1>EduGenie - Google Gemini Learning Assistant</h1>
+
+    <br><br>
+
+    <button type="submit" name="action" value="answer">
+        Ask Question
+    </button>
+
+    <button type="submit" name="action" value="explain">
+        Explain Topic
+    </button>
+
+    <button type="submit" name="action" value="summarize">
+        Summarize
+    </button>
+
+    <button type="submit" name="action" value="quiz">
+        Generate Quiz
+    </button>
+</form>
+    </div>
+</body>
+</html>
